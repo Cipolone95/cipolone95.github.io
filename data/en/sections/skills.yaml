@@ -33,7 +33,7 @@ skills:
 
 - name: Python
   logo: /images/sections/skills/python.png
-  summary: "Write most of work's internal tooling in Python."
+  summary: "Write most of work's internal tools in Python."
   categories: ["language"]
   url: "https://www.python.org/"
 
