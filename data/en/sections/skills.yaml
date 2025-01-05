@@ -27,7 +27,7 @@ buttons:
 skills:
 
 - name: AWS
-  logo: /images/sections/skills/aws.png
+  logo: /images/sections/skills/cloud.png
   summary: "Using AWS daily for pentesting engagements."
   categories: ["others"]
 
