@@ -22,8 +22,8 @@ customMenus:
 
 # Specify OpenGraph Headers
 openGraph:
-  title: John's Blog
+  title: Pete's Website
   type: website
-  description: Portfolio and personal blog of John Doe.
+  description: Portfolio and personal website of Pete Cipolone.
   image: images/author/john.png
   url: https://hugo-toha.github.io
