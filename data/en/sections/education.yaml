@@ -19,39 +19,39 @@ degrees:
     logo: /images/sections/education/Rowan_University_Seal.png
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/education/university.jpg
-  grade: #(optional)
+  grade:
     scale: GPA
     achieved: 3.5
     outOf: 4
-  takenCourses: false
+  #takenCourses: false
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
-    showGrades: true
-    collapseAfter: 3
-    courses:
-    - name: Data Structures and Algorithm
-      achieved: 3.75
-      outOf: 4
-    - name: Network Security
-      achieved: 3.80
-      outOf: 4
-    - name: Operating System
-      achieved: 3.5
-      outOf: 4
-    - name: Artificial Intelligent
-      achieved: 3.75
-      outOf: 4
-  publications: false
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
-  extracurricularActivities: false
-  - In vitae facilisis est, eget porta sem.
-  - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  - Duis sed massa feugiat, ornare justo et, aliquam est.
-  - Pellentesque ut fringilla magna.
-  custonSections: false
-    - name: Thesis
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - name: Supervisor
-      content: Fusce eu augue ut odio porttitor pulvinar.
+    #showGrades: false
+    #collapseAfter: 3
+    #courses:
+    #- name: Data Structures and Algorithm
+    #  achieved: 3.75
+    #  outOf: 4
+    #- name: Network Security
+    #  achieved: 3.80
+    #  outOf: 4
+    #- name: Operating System
+    #  achieved: 3.5
+    #  outOf: 4
+    #- name: Artificial Intelligent
+    #  achieved: 3.75
+    #  outOf: 4
+  #publications: false
+  #- title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  #  url: "#"
+  #- title: Fusce eu augue ut odio porttitor pulvinar.
+  #  url: "#"
+  #extracurricularActivities: false
+  #- In vitae facilisis est, eget porta sem.
+  #- Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
+  #- Duis sed massa feugiat, ornare justo et, aliquam est.
+  #- Pellentesque ut fringilla magna.
+  #custonSections: false
+   # - name: Thesis
+   #   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+   # - name: Supervisor
+     # content: Fusce eu augue ut odio porttitor pulvinar.
