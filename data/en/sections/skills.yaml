@@ -25,7 +25,6 @@ buttons:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-
 - name: AWS
   logo: /images/sections/skills/cloud.png
   summary: "Using AWS daily for pentesting engagements."
