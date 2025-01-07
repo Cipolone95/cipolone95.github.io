@@ -14,6 +14,8 @@ author:
 
 
 
-Books Read
+A curated list of great books I have read this year. 
+
+
 - The Recruiter: A Rick Carter Novel by Gregg Podolski 
 - Book2
