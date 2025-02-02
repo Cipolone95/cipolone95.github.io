@@ -7,12 +7,10 @@ menu:
     name: Introduction
     identifier: introduction
     weight: 10
-tags: ["Basic", "Multi-lingual"]
+tags: ["Basic"]
 categories: ["Basic"]
 ---
 
-Greeting! This is an introduction post. This post tests the followings:
+Howdy! This is my little corner of the internet where I post about things. I'm not very good at keeping this updated, but I do cool things sometimes and I like to talk about them in case other people find them cool. I hope you find something cool here. If not, check back again later. Thanks!
 
-- Hero image is in the same directory as the post.
-- This post should be at top of the sidebar.
-- Post author should be the same as specified in `author.yaml` file.
+
