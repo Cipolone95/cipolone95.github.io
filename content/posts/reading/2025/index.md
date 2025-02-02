@@ -18,4 +18,6 @@ A curated list of great books I have read this year.
 
 
 - The Recruiter: A Rick Carter Novel by Gregg Podolski 
-- Book2
+- The Subtle Art of Not Giving a F*ck by Mark Manson
+- 33 Days to Eucharistic Glory by Matthew Kelly
+- Beasts of Extraordinary Circumstance by Ruth Emmie Lang  

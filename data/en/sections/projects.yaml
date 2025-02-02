@@ -14,8 +14,8 @@ buttons:
   filter: "all"
 - name: Professional
   filter: "professional"
-- name: Academic
-  filter: "academic"
+- name: Coding
+  filter: "coding"
 - name: Hobby
   filter: "hobby"
 
@@ -45,4 +45,11 @@ projects:
   url: "https://www.cybrary.it/course/cyber-network-security"
   summary: A course on Network Security. 
   tags: ["professional","course"]
+
+- name: WarRig
+  role: builder
+  timeline: December 2024 - Present
+  url: ""
+  summary: WarRig is a tool used for automating payload generation. Runs on Golang and works with Terraform and Ansible to setup the environment. This is currently a work in progress.
+  tags: ["professional", "coding"]
 
