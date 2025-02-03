@@ -3,28 +3,19 @@ title: File Manipulation
 weight: 40
 menu:
   notes:
-    name: File Manipulation
-    identifier: notes-go-advanced-files
+    name: AD Enumeration
+    identifier: notes-ADEnumeration-windows-files
     parent: notes-go-advanced
     weight: 10
 ---
 
 <!-- Condition -->
-{{< note title="Condition">}}
+{{< note title="Windows AD Enumeration">}}
 
-```go
-if day == "sunday" || day == "saturday" {
-  rest()
-} else if day == "monday" && isTired() {
-  groan()
-} else {
-  work()
-}
+
+This is a sample command in a code block
 ```
-
-```go
-if _, err := doThing(); err != nil {
-  fmt.Println("Uh oh")
+python3 helloworld.py
 ```
 
 {{< /note >}}
