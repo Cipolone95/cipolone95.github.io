@@ -61,10 +61,15 @@ badges:
   url: "https://www.credly.com/badges/0f1732ca-fde2-4868-91a8-612345da5e73/"
   badge: "https://images.credly.com/size/340x340/images/c4320f01-2ff4-4508-984a-415fc94e3aec/image.png"
 
-- type: soft-skill-indicator
-  name: Communication
-  percentage: 70
-  color: blue
+- type: certification
+  name: ARTE
+  url:  "https://training.hacktricks.xyz/certificates/4ea14255-09f1-499d-b020-f878dfd7d1c3"
+  badge: "https://training.hacktricks.xyz/static/media/ARTE_CAN.6976723e738a8da345be.png"
+
+# - type: soft-skill-indicator
+#   name: Communication
+#   percentage: 70
+#   color: blue
 
 - type: soft-skill-indicator
   name: Humility
