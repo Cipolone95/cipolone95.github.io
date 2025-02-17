@@ -17,7 +17,7 @@ accomplishments:
     name: BSides
     url: https://bsidesphilly.org/
   courseOverview: Gave a talk on phishing and some of the advanced techniques I use at work. Aspects included SMTP Open Relays, Reverse Proxying, and the Bob Ross technique. Video will be uploaded to Youtube sometime soon. 
-  certificateURL: "https://example.com"
+  certificateURL: "https://www.youtube.com/watch?v=qpErKMJjnE0&t=1s"
 
 - name: CVE-2024-50658, CVE-2024-50659, and CVE-2024-50660
   timeline: "Septmeber 2024"
