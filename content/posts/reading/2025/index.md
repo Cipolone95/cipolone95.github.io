@@ -21,4 +21,8 @@ A curated list of great books I have read this year.
 - The Subtle Art of Not Giving a F*ck by Mark Manson
 - 33 Days to Eucharistic Glory by Matthew Kelly
 - Beasts of Extraordinary Circumstance by Ruth Emmie Lang
-- Your Inner Fish by Neil Shubin  
+- Your Inner Fish by Neil Shubin 
+- Bullshit Jobs by David Graeber
+- Say Nothing: A Story of Murder and Memory in Northern Ireland by Patrick Radden Keefe
+- The Fish that Ate the Whale: The Life and Times of America's Banana King by Richard Cohen
+- Ten Lessons for a Post-Pandemic World by Fareed Zakaria 
