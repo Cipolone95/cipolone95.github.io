@@ -26,8 +26,10 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Performed External, Internal, Web Application, Cloud, and Social Engineering engagments.
-    - Contributed to the building of internal tools.
+    - Lead tester on 14 penetration tests and assistant on another six tests in the areas of external, web application, internal, cloud, and social.
+    - Found over 98 vulnerabilities with 17 being categorized as critical or high. 
+    - Communicated closely with clients from the kickoff call to the final out brief. 
+    - Developed or contributed to 20+ internal tools in the areas of phishing, payload testing, cloud, and external.
 
   - designation: SOC Analyst and Shift Lead 
     start: January 2023

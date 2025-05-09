@@ -30,7 +30,7 @@ skills:
 
 - name: Python
   logo: /images/sections/skills/python.png
-  summary: "Write most of work's internal tools in Python."
+  summary: "Write some of work's internal tools in Python."
   categories: ["language"]
   url: "https://www.python.org/"
 
@@ -44,4 +44,10 @@ skills:
   summary: "Experienced with git-based development. Github and CodeCommit are used for collaborative projects."
   categories: ["basic"]
   url: "https://git-scm.com/"
+
+- name: Go
+  logo: /images/sections/skills/go.png
+  summary: "Write most of work's internal tools in Go."
+  categories: ["language"]
+  url: "https://go.dev/"
 
