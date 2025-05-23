@@ -7,6 +7,7 @@ menu:
     name: Cackalacky Con
     identifier: CackCon
     weight: 20
+    parent: cyber
 tags: ["Basic"]
 categories: ["Basic"]
 ---

@@ -7,6 +7,7 @@ menu:
     name: ARTE Exam Review
     identifier: arte
     weight: 20
+    parent: cyber
 tags: ["Basic"]
 categories: ["Basic"]
 ---
