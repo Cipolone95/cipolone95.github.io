@@ -53,3 +53,16 @@ projects:
   summary: WarRig is a tool used for automating payload generation. Runs on Golang and works with Terraform and Ansible to setup the environment. This is currently a work in progress.
   tags: ["professional", "coding"]
 
+- name: CORGI
+  role: builder
+  timeline: May 2025 - Present
+  url: ""
+  summary: CORGI stands for "CLoud Operator's Recon & Gap Identifier". This is a tool which can extract data from a ScoutSuite and AWS acounts to help speed up security assessments. This is currently a work in progress.
+  tags: ["professional", "coding"]
+
+- name: Mutiny
+  role: builder
+  timeline: September 2024 - Present
+  url: ""
+  summary: A wrapper for pentesting tools to help speed up/automate external assessments. Uses Channels/Workers for local use and Axiom (soon to be Argo flows) for large scopes.
+  tags: ["professional", "coding"]

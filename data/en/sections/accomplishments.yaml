@@ -33,6 +33,14 @@ accomplishments:
     name: Appalachian Trail
     url: https://appalachiantrail.org/
   courseOverview: Took a six month break from work to hike 2194.3 miles of the Appalachian National Scenic Trail. I learned a lot about myself and my capabilities. I also learned invaluable softskills which help me everyday at work.
-  certificateURL: "https://example.com"
+  certificateURL: "https://appalachiantrail.org/"
+
+- name: Cackalacky Con Speaker
+  timeline: "May 2025"
+  organization:
+    name: Cackalacky Con
+    url: https://cackalackycon.org/
+  courseOverview: Gave a talk on phishing and some of the advanced techniques I use at work. Aspects included reverse proxying, bot detection, SMTP relays, and Content Filtering Bypasses.
+  certificateURL: "https://cackalackycon.org/"
 
 
