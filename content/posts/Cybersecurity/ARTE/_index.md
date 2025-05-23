@@ -6,7 +6,7 @@ menu:
   sidebar:
     name: ARTE Exam Review
     identifier: arte
-    weight: 10
+    weight: 20
 tags: ["Basic"]
 categories: ["Basic"]
 ---
