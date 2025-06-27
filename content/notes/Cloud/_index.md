@@ -1,5 +1,5 @@
 ---
-title: Go Notes
+title: Cloud Notes
 menu:
   notes:
     name: Cloud
