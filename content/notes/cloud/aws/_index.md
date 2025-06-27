@@ -5,7 +5,7 @@ menu:
   notes:
     name: AWS
     identifier: AWS Notes
-    parent: notes-cloud
+    parent: cloud
     weight: 20
 ---
 
