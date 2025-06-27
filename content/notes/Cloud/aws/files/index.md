@@ -5,7 +5,7 @@ menu:
   notes:
     name: AWS Notes
     identifier: notes-go-advanced-files
-    parent: cloud-aws
+    parent: notes-cloud-aws
     weight: 10
 ---
 
