@@ -2,8 +2,8 @@
 title: Go Notes
 menu:
   notes:
-    name: Go
-    identifier: notes-go
+    name: Cloud
+    identifier: notes-Cloud
     weight: 10
 ---
 

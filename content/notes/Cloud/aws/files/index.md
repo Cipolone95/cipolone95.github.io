@@ -1,11 +1,11 @@
 ---
-title: File Manipulation
+title: AWS Notes 
 weight: 40
 menu:
   notes:
-    name: File Manipulation
+    name: AWS Notes
     identifier: notes-go-advanced-files
-    parent: notes-go-advanced
+    parent: cloud-aws
     weight: 10
 ---
 
