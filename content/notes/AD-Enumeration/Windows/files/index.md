@@ -5,7 +5,7 @@ menu:
   notes:
     name: AD Enumeration
     identifier: notes-ADEnumeration-windows-files
-    parent: notes-go-advanced
+    parent: notes-ADEnumeration-windows
     weight: 10
 ---
 

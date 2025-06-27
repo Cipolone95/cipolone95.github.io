@@ -3,7 +3,7 @@ title: Cloud Notes
 menu:
   notes:
     name: Cloud
-    identifier: notes-Cloud
+    identifier: notes-cloud
     weight: 10
 ---
 

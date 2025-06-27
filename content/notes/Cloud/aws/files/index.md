@@ -4,9 +4,9 @@ weight: 40
 menu:
   notes:
     name: AWS Notes
-    identifier: notes-go-advanced-files
+    identifier: notes-cloud-aws-info
     parent: notes-cloud-aws
-    weight: 10
+    weight: 20
 ---
 
 <!-- Condition -->
