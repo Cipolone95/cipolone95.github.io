@@ -10,10 +10,17 @@ menu:
 ---
 
 <!-- Condition -->
-{{< note title="Check S3 Buckets">}}
+{{< note title="S3 Buckets">}}
 
+Check for Bucket Versioning
 ```
-aws s3 ls
+curl -I https://<BUCKETNAME>.s3.<REGION>.amazonaws.com //Look for x-amz-version-id
+aws s3api list-object-versions --bucket <BUCKETNAME> --query "Versions[?VersionId!='null']" --no-sign-request
 ```
 
+Brute Force Bucket Names (assuming patterns are found)
+```
+ffuf -u 'https://bucket-FUZZ.s3.amazonaws.com' -w fuzzingBucketWordlist.txt
+```
 {{< /note >}}
+
