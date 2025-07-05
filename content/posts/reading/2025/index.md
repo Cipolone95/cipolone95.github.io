@@ -25,4 +25,6 @@ A curated list of great books I have read this year.
 - Bullshit Jobs by David Graeber
 - Say Nothing: A Story of Murder and Memory in Northern Ireland by Patrick Radden Keefe
 - The Fish that Ate the Whale: The Life and Times of America's Banana King by Richard Cohen
-- Ten Lessons for a Post-Pandemic World by Fareed Zakaria 
+- Ten Lessons for a Post-Pandemic World by Fareed Zakaria
+- Jedi Search by Kevin Anderson (Jedi Academy Trilogy volume 1)
+- Dark Apprentice by Kevin Anderson (Jedi Academy Trilogy volume 2) 
