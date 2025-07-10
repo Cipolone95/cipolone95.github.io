@@ -31,4 +31,23 @@ xhr.send();
 &lt;p>Check for Bucket Versioning&lt;/p>
 &lt;pre tabindex="0">&lt;code>curl -I https://&amp;lt;BUCKETNAME&amp;gt;.s3.&amp;lt;REGION&amp;gt;.amazonaws.com //Look for x-amz-version-id
 aws s3api list-object-versions --bucket &amp;lt;BUCKETNAME&amp;gt; --query &amp;#34;Versions[?VersionId!=&amp;#39;null&amp;#39;]&amp;#34; --no-sign-request
-&lt;/code>&lt;/pre>&lt;p>Brute Force Bucket Names (assuming patterns are found)&lt;/p></description></item></channel></rss>
+&lt;/code>&lt;/pre>&lt;p>Brute Force Bucket Names (assuming patterns are found)&lt;/p></description></item><item><title>Azure Notes</title><link>https://cipolone95.github.io/notes/cloud/azure/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cipolone95.github.io/notes/cloud/azure/files/</guid><description>&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Recon and Enumeration&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;p>Get basic information about the domain&lt;/p>
+&lt;pre tabindex="0">&lt;code>https://login.microsoftonline.com/getuserrealm.srf?login=example.com&amp;amp;xml=1
+&lt;/code>&lt;/pre>&lt;p>AAD Internals&lt;/p>
+&lt;pre tabindex="0">&lt;code>Get-AADIntLoginInformation -Domain &amp;lt;example.com&amp;gt;
+Get-AADIntTenantID -Domain &amp;lt;example.com&amp;gt;
+Invoke-AADIntReconAsOutsider -DomainName &amp;lt;example.com&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>Azure Subdomain Enumeration&lt;/p>
+&lt;pre tabindex="0">&lt;code>#github https://github.com/yuyudhn/AzSubEnum
+python3 azsubenum.py -b domain -p permutations.txt -v
+&lt;/code>&lt;/pre>&lt;p>Username Enumeration&lt;/p>
+&lt;pre tabindex="0">&lt;code>Github: https://github.com/0xZDH/Omnispray
+python3 omnispray.py -m o365_enum_office -d example.com -uf ~/Documents/userList.txt
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

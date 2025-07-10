@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Azure on Pete's Website</title><link>https://cipolone95.github.io/notes/cloud/azure/</link><description>Recent content in Azure on Pete's Website</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://cipolone95.github.io/notes/cloud/azure/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure Notes</title><link>https://cipolone95.github.io/notes/cloud/azure/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cipolone95.github.io/notes/cloud/azure/files/</guid><description>&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Recon and Enumeration&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;p>Get basic information about the domain&lt;/p>
+&lt;pre tabindex="0">&lt;code>https://login.microsoftonline.com/getuserrealm.srf?login=example.com&amp;amp;xml=1
+&lt;/code>&lt;/pre>&lt;p>AAD Internals&lt;/p>
+&lt;pre tabindex="0">&lt;code>Get-AADIntLoginInformation -Domain &amp;lt;example.com&amp;gt;
+Get-AADIntTenantID -Domain &amp;lt;example.com&amp;gt;
+Invoke-AADIntReconAsOutsider -DomainName &amp;lt;example.com&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>Azure Subdomain Enumeration&lt;/p>
+&lt;pre tabindex="0">&lt;code>#github https://github.com/yuyudhn/AzSubEnum
+python3 azsubenum.py -b domain -p permutations.txt -v
+&lt;/code>&lt;/pre>&lt;p>Username Enumeration&lt;/p>
+&lt;pre tabindex="0">&lt;code>Github: https://github.com/0xZDH/Omnispray
+python3 omnispray.py -m o365_enum_office -d example.com -uf ~/Documents/userList.txt
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
