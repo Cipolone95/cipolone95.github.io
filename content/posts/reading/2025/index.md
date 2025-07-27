@@ -28,3 +28,6 @@ A curated list of great books I have read this year.
 - Ten Lessons for a Post-Pandemic World by Fareed Zakaria
 - Jedi Search by Kevin Anderson (Jedi Academy Trilogy volume 1)
 - Dark Apprentice by Kevin Anderson (Jedi Academy Trilogy volume 2) 
+- Slow Productivity: The Lost Art of Accomplishment Without Burnout by Cal Newport
+- Champings of the Force by Kevin Anderson (Jedi Academy Trilogy volume 3)
+- Company of One by Paul Jarvis 
