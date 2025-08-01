@@ -120,6 +120,7 @@ Get-MgUser -UserId &lt;email&gt; | fl
 Get-MgDirectoryAdministrativeUnit | fl
 
 #Get Roles associated with an AU
+#Automation Script: https://github.com/BenTamam/PentestPlayground/blob/main/Azure/Scripts/CheckScopedRolePrivileges.ps1
 $ScopedRoleMembers = Get-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId &lt;AU-ID&gt;
 Get-MgDirectoryRole -DirectoryRoleId &lt;RoleID&gt; | fl
 
