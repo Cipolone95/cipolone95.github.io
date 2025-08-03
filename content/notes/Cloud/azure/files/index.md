@@ -42,8 +42,24 @@ Checking Azure MFA (Assuming Credentials are obtained)
 ```
 Github: https://github.com/dafthack/MFASweep
 Invoke-MFASweep -Username <Username> -Password <password> -Recon -IncludeADFS
-
 ```
+
+Blob Enumeration
+```
+Format
+https://<storageAccount>.blob.core.windows.net/<containername>/file.txt
+
+//List Directories in Blob
+https://<storageAccount>.blob.core.windows.net/<containername>?restype=container&comp=list&delimiter=%2F
+
+//Check for Versioning in blob
+curl -H "x-ms-version: 2019-12-12" 'https://<storageAccount>.blob.core.windows.net/<containername>?restype=container&comp=list&include=versions' | xmllint --format - | less
+
+//Download Potential Files (assuming versioning is enabled)
+curl -H "x-ms-version: 2019-12-12" 'https://<storageAccount>.blob.core.windows.net/<containername>/file.zip?versionId=<VersionID>' --output file.zip
+``` 
+
+
 {{< /note >}}
 
 
