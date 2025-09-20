@@ -59,6 +59,12 @@ curl -H "x-ms-version: 2019-12-12" 'https://<storageAccount>.blob.core.windows.n
 curl -H "x-ms-version: 2019-12-12" 'https://<storageAccount>.blob.core.windows.net/<containername>/file.zip?versionId=<VersionID>' --output file.zip
 ``` 
 
+Azure App Enumeration
+```
+<appName>.azurewebsites.net
+<appName>.scm.azurewebsites.net
+```
+
 
 {{< /note >}}
 
@@ -79,14 +85,19 @@ Invoke-SearchMailbox -Tokens $tokens -SearchTerm "password" -MessageCount 50
 
 Setup Az and Graph Powershell Modules 
 ```
-Install-Module Az
-Import-Module Az
-Connect-AzAccount
+az login
 
 Install-Module Microsoft.Graph
 Import-Module Microsoft.Graph
 Connect-MgGraph
 ```
+
+Az Cli Enumeration
+```
+az account list --output table
+az resource list --output table 
+```
+
 Microsoft Graph Powershell Enumeration
 ```
 #Get user Info
