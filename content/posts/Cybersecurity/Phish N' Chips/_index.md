@@ -5,7 +5,7 @@ menu:
     name: Phish N' Chips
     identifier: phishnchips
     parent: cyber
-    weight: 20
+    weight: 5
 ---
 
 This is a collection of thoughts, ideas, and experiences related to phishing and social engineering.
