@@ -4,6 +4,7 @@ menu:
   sidebar:
     name: Phish N' Chips
     identifier: phishnchips
+    parent: cyber
     weight: 20
 ---
 

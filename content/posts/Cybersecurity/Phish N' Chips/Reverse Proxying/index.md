@@ -1,5 +1,6 @@
 ---
 title: Basics of Reverse Proxying
+date: 2025-09-20T11:58:41-04:00
 menu:
   sidebar:
     name: The Basics of Reverse Proxying
