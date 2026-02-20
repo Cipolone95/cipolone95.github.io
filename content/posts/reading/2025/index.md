@@ -30,4 +30,11 @@ A curated list of great books I have read this year.
 - Dark Apprentice by Kevin Anderson (Jedi Academy Trilogy volume 2) 
 - Slow Productivity: The Lost Art of Accomplishment Without Burnout by Cal Newport
 - Champings of the Force by Kevin Anderson (Jedi Academy Trilogy volume 3)
-- Company of One by Paul Jarvis 
+- Company of One by Paul Jarvis
+- Right Thing, Right Now by Ryan Holiday
+- Flash Boys by Michael Lewis
+- The Devotion of Suspect X by Keigo Higashino
+- Two Serpants Rise by Max Gladstone
+- The 4-Hour Body by Tim Ferriss
+- Steal Like An Artist - By Autin Kleon
+
