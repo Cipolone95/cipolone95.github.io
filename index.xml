@@ -4,6 +4,13 @@
 &lt;li&gt;Wisdom Takes Work by Ryan Holiday&lt;/li&gt;
 &lt;li&gt;Scoping by Andreas Aaris-Larsen&lt;/li&gt;
 &lt;li&gt;The Mechanical by Ian Tregillis&lt;/li&gt;
+&lt;li&gt;Interior Freedom by Fr. Jacques Philippe&lt;/li&gt;
+&lt;li&gt;Resisting Happiness by Matthew Kelly&lt;/li&gt;
+&lt;li&gt;Holy Sex! by Gregory Popcak&lt;/li&gt;
+&lt;li&gt;Seasons Of The Soul by Maria Concepcion Cabrera de Armida (Conchita)&lt;/li&gt;
+&lt;li&gt;The Frugal Wizard&amp;rsquo;s Handbook for Surviving Medieval England by Brandon Sanderson&lt;/li&gt;
+&lt;li&gt;Three to Get Married by Fulton Sheen&lt;/li&gt;
+&lt;li&gt;The Rising by Ian Tregillis&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title>Basics of Reverse Proxying</title><link>https://cipolone95.github.io/posts/cybersecurity/phish-n-chips/reverse-proxying/</link><pubDate>Sat, 20 Sep 2025 11:58:41 -0400</pubDate><guid>https://cipolone95.github.io/posts/cybersecurity/phish-n-chips/reverse-proxying/</guid><description>&lt;h3 id="the-basics"&gt;The Basics&lt;/h3&gt;
 &lt;p&gt;This is some basic info about reverse proxying&lt;/p&gt;
 &lt;h3 id="the-tools"&gt;The Tools&lt;/h3&gt;
@@ -146,8 +153,8 @@ class="center"
 &gt;
 &lt;div style="margin-top: rem;"&gt;&lt;/div&gt;
 &lt;h3 id="tweet-sample"&gt;Tweet Sample&lt;/h3&gt;
-&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Owl bet you&amp;#39;ll lose this staring contest 🦉 &lt;a href="https://t.co/eJh4f2zncC"&gt;pic.twitter.com/eJh4f2zncC&lt;/a&gt;&lt;/p&gt;&amp;mdash; San Diego Zoo Wildlife Alliance (@sandiegozoo) &lt;a href="https://twitter.com/sandiegozoo/status/1453110110599868418?ref_src=twsrc%5Etfw"&gt;October 26, 2021&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Owl bet you&amp;#39;ll lose this staring contest 🦉 &lt;a href="https://t.co/eJh4f2zncC"&gt;pic.twitter.com/eJh4f2zncC&lt;/a&gt;&lt;/p&gt;&amp;mdash; San Diego Zoo Wildlife Alliance (@sandiegozoo) &lt;a href="https://x.com/sandiegozoo/status/1453110110599868418?ref_src=twsrc%5Etfw"&gt;October 26, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
 &lt;div style="margin-top: rem;"&gt;&lt;/div&gt;
 &lt;h3 id="youtube-video-sample"&gt;YouTube Video Sample&lt;/h3&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
