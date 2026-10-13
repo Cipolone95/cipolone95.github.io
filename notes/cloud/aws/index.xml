@@ -31,4 +31,9 @@ xhr.send();
 &lt;p&gt;Check for Bucket Versioning&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;curl -I https://&amp;lt;BUCKETNAME&amp;gt;.s3.&amp;lt;REGION&amp;gt;.amazonaws.com //Look for x-amz-version-id
 aws s3api list-object-versions --bucket &amp;lt;BUCKETNAME&amp;gt; --query &amp;#34;Versions[?VersionId!=&amp;#39;null&amp;#39;]&amp;#34; --no-sign-request
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Brute Force Bucket Names (assuming patterns are found)&lt;/p&gt;</description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Brute Force Bucket Names (assuming patterns are found)&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;ffuf -u &amp;#39;https://bucket-FUZZ.s3.amazonaws.com&amp;#39; -w fuzzingBucketWordlist.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>
