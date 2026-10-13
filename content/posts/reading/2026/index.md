@@ -27,4 +27,10 @@ A curated list of great books I have read this year.
 - The Frugal Wizard's Handbook for Surviving Medieval England by Brandon Sanderson
 - Three to Get Married by Fulton Sheen
 - The Rising by Ian Tregillis
+- The Liberation by Ian Tegillis
+- Dungeon Crawler Carl by Matt Dinniman
+- Red Rising by Pierce Brown
+- Do Androids Dream of Electric Sheep by Phillip Dick
+- The Simple Path to Wealth by JL Collins
+
 
