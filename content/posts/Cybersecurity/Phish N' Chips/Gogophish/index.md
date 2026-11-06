@@ -1,5 +1,5 @@
 ---
-title: Gogophish: Turning Gophish into a Command Line Utility
+title: Gogophish - Turning Gophish into a Command Line Utility
 date: 2026-11-05T21:43:59-05:00
 menu:
   sidebar:
