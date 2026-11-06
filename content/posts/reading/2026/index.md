@@ -32,5 +32,7 @@ A curated list of great books I have read this year.
 - Red Rising by Pierce Brown
 - Do Androids Dream of Electric Sheep by Phillip Dick
 - The Simple Path to Wealth by JL Collins
+- This Body isn't Big Enough for both of Us by Edgar Cantero
+- Never Split the Difference by Chris Voss
 
 
